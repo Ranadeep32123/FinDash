@@ -1,0 +1,13 @@
+.homepage {
+  display: flex;
+}
+.home-container {
+  flex: 5;
+
+  .widget-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: none;
+  }
+}

@@ -1,0 +1,23 @@
+.widgets {
+  display: flex;
+  flex: 1;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(200, 200, 200, 0.1);
+  height: 10vh;
+  margin: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5%;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title {
+      font-weight: bold;
+    }
+  }
+}
