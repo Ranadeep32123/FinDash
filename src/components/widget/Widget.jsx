@@ -7,18 +7,19 @@ export const Widget = () => {
   return (
     <div className="widgets">
       <div className="left">
-        <span className="title">USERS</span>
-        <span className="counter">11234</span>
-        <span className="link">view all</span>
+        <div className="title">Greeks</div>
+        <div className="counter greeks">Delta</div>
+
+        <div className="counter greeks">Theta</div>
+        <div className="counter greeks">Gamma</div>
+        <div className="counter greeks">Vega</div>
       </div>
       <div className="right">
-        <div className="percent">
-          <span className="incr-decr">
-            <KeyboardArrowUpIcon />
-            20%
-          </span>
-        </div>
-        <PeopleIcon />
+        <div className="title2">0</div>
+        <div className="data">546</div>
+        <div className="data">546</div>
+        <div className="data">546</div>
+        <div className="data">546</div>
       </div>
     </div>
   );
