@@ -4,7 +4,10 @@ import { createChart } from "lightweight-charts";
 import { useRef, useEffect } from "react";
 
 export const Plcharts = () => {
+  const refId = useRef(null);
+
   useEffect(() => {
+    const id = refId.current;
     return function () {
       const chartOptions = {
         layout: {
@@ -12,7 +15,7 @@ export const Plcharts = () => {
           background: { type: "solid", color: "white" },
         },
       };
-      const chart = createChart(document.getElementById("borex"), chartOptions);
+      const chart = createChart(id, chartOptions);
       const areaSeries = chart.addAreaSeries({
         lineColor: "#2962FF",
         topColor: "#2962FF",
@@ -115,5 +118,5 @@ export const Plcharts = () => {
     };
   }, []);
 
-  return <div id="borex"></div>;
+  return <div ref={refId} id="borex"></div>;
 };
