@@ -1,7 +1,8 @@
 import React from "react";
+import "./straddlecharts.scss";
 
 const Straddlechart = () => {
-  return <div>straddlechart</div>;
+  return <div className="straddlecharts">straddlechart</div>;
 };
 
 export default Straddlechart;

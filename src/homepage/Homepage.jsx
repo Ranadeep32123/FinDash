@@ -13,14 +13,14 @@ const Homepage = () => {
       <div className="home-container">
         <Navbar />
         <div className="widget-container">
-          <Widget />
-          <Widget />
-          <Widget />
-          <Widget />
+          <Widget type="user" />
+          <Widget type="order" />
+          <Widget type="earning" />
+          <Widget type="balance" />
         </div>
         <div className="charts">
+          <Straddlechart />
           <Plcharts />
-          {/* <Straddlechart /> */}
         </div>
       </div>
     </div>

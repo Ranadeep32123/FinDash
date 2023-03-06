@@ -21,17 +21,34 @@
       font-weight: 100;
       color: rgb(15, 15, 15);
     }
-    .greeks {
-      font-size: 12px;
-      font-weight: 400;
+    .counter {
+      font-size: 28px;
+      font-weight: 300;
       color: rgb(51, 50, 50);
     }
-    .data {
+    .link {
+      width: max-content;
       font-size: 12px;
-      color: rgb(51, 50, 50);
+      border-bottom: 1px solid gray;
     }
-    .title2 {
-      visibility: hidden;
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      &.positive {
+        color: green;
+      }
+      &.negetive {
+        color: red;
+      }
+    }
+    .icon {
+      font-size: 18px;
+      padding: 5px;
+      background-color: rgb(197, 116, 173);
+      border-radius: 5px;
+      align-self: flex-end;
     }
   }
 }
