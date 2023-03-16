@@ -1,4 +1,5 @@
 import React from "react";
+import List from "../components/List";
 import { Navbar } from "../components/Navbar";
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import homepage from "./homepage.scss";
@@ -21,6 +22,9 @@ const Homepage = () => {
         <div className="charts">
           <Straddlechart />
           <Plcharts />
+        </div>
+        <div className="table">
+          <List />
         </div>
       </div>
     </div>

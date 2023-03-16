@@ -12,43 +12,43 @@ import {
 
 const data = [
   {
-    name: "Page A",
+    name: "JAN",
     uv: 4000,
     pv: 2400,
     amt: 2400,
   },
   {
-    name: "Page B",
+    name: "FEB",
     uv: 3000,
     pv: 1398,
     amt: 2210,
   },
   {
-    name: "Page C",
+    name: "MAR",
     uv: 2000,
     pv: 9800,
     amt: 2290,
   },
   {
-    name: "Page D",
+    name: "APR",
     uv: 2780,
     pv: 3908,
     amt: 2000,
   },
   {
-    name: "Page E",
+    name: "MAY",
     uv: 1890,
     pv: 4800,
     amt: 2181,
   },
   {
-    name: "Page F",
+    name: "JUN",
     uv: 2390,
     pv: 3800,
     amt: 2500,
   },
   {
-    name: "Page G",
+    name: "JUL",
     uv: 3490,
     pv: 4300,
     amt: 2100,
@@ -57,8 +57,8 @@ const data = [
 export const Plcharts = () => {
   return (
     <div className="plcharts">
-      {" "}
-      <ResponsiveContainer width="100%" height="100%">
+      <div className="title">Last 6 Months </div>
+      <ResponsiveContainer width="100%" aspect={1.6 / 1}>
         <AreaChart
           width={500}
           height={400}
@@ -70,7 +70,7 @@ export const Plcharts = () => {
             bottom: 0,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="3 3" className="Grid" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
