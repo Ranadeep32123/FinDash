@@ -54,11 +54,11 @@ const data = [
     amt: 2100,
   },
 ];
-export const Plcharts = () => {
+export const Plcharts = ({ aspect }) => {
   return (
     <div className="plcharts">
       <div className="title">Last 6 Months </div>
-      <ResponsiveContainer width="100%" aspect={1.6 / 1}>
+      <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={500}
           height={400}

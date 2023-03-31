@@ -1,0 +1,28 @@
+.lists {
+  display: flex;
+  max-width: 100%;
+  .listContainer {
+    flex: 5;
+    .addnew {
+      display: flex;
+      .left {
+        flex: 10;
+      }
+      .right {
+        button {
+          flex: 1;
+          margin: 10px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: teal;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            background-color: #e0e0e0;
+          }
+        }
+      }
+    }
+  }
+}

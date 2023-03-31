@@ -1,0 +1,151 @@
+.dark {
+  background: #242b2b;
+  .Grid {
+    stroke: rgb(96, 93, 99);
+  }
+  .widgets {
+    background-color: #292e2e;
+    .left {
+      .title {
+        color: #eeeff3;
+      }
+      .counter,
+      .link {
+        color: #eeeff3;
+      }
+    }
+  }
+
+  .title {
+    color: #eeeff3;
+  }
+  .sidebar {
+    background: #242b2b;
+    border-color: #3d4141;
+    ul {
+      .title {
+        color: #eeeff3;
+      }
+      li {
+        &:hover {
+          background-color: #575a5a;
+
+          .icons {
+            color: #eeeff3;
+          }
+        }
+      }
+    }
+
+    hr {
+      border-color: #3d4141;
+    }
+    .menu {
+      color: #9eacaa;
+    }
+  }
+  .table {
+    background-color: #292e2e;
+    margin: 20px;
+    .tableCell {
+      color: #9eacaa;
+    }
+  }
+  .plcharts {
+    background-color: #292e2e;
+  }
+  .straddlecharts {
+    background-color: #292e2e;
+    .amount {
+      color: #eeeff3;
+    }
+    .title,
+    .desc {
+      color: #9eacaa;
+    }
+    .bottom {
+      .summary {
+        .item {
+          .itemtitle {
+            color: #9eacaa;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar {
+    height: 50px;
+    border-bottom: 0.5px solid #3d4141;
+    align-items: center;
+    font-size: 12px;
+    background-color: #242b2b;
+    .wrapper {
+      .items {
+        .item {
+          color: #eeeff3;
+
+          .profile {
+          }
+
+          .icon {
+          }
+
+          .counter {
+          }
+        }
+      }
+
+      .search {
+        border: none;
+        background-color: #3d4141;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .lists {
+    .listContainer {
+      background-color: #242b2b;
+    }
+  }
+  .datatable {
+    margin: 10px;
+    background-color: #292e2e;
+    overflow: hidden;
+
+    .datagrid {
+      // border: none;
+      color: #9eacaa;
+
+      .userListEdit,
+      .userListDelete {
+        background-color: none;
+        border: none;
+        color: #c6d3d3;
+        text-decoration: underline;
+      }
+    }
+  }
+  .container-fluid {
+    background-color: #242b2b;
+    .main-content {
+      .top {
+        .top-left {
+          background-color: #292e2e;
+          .details {
+            color: #9eacaa;
+            .itemTitle {
+              color: #eeeff3;
+            }
+            .detailItem {
+              .itemKey {
+                color: #9eacaa;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

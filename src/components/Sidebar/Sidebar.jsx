@@ -8,12 +8,21 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import MenuBookIcon from "@mui/icons-material/MenuBook";
 import QuizIcon from "@mui/icons-material/Quiz";
 import LogoutIcon from "@mui/icons-material/Logout";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import { Link } from "react-router-dom";
+import { ThemeContext } from "../../Context/themeContext";
+import { useContext } from "react";
 
 export const Sidebar = () => {
+  const { setTheme } = useContext(ThemeContext);
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">mylogo</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <div className="logo" style={{ textDecoration: "none" }}>
+            logo
+          </div>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -21,42 +30,60 @@ export const Sidebar = () => {
           <p className="title">USER</p>
           <li>
             <LogoutIcon className="icons" />
-            <span>Logout</span>
+            <span className="menu">Logout</span>
           </li>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className="icons" />
+              <span className="menu">Users</span>
+            </li>
+          </Link>
           <li>
             <DashboardIcon className="icons" />
-            <span>Dashboard</span>
+            <span className="menu">Dashboard</span>
           </li>
-          <li>
-            <PersonIcon className="icons" />
-            <span>Profile</span>
-          </li>
+          <Link to="/users/:id" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonIcon className="icons" />
+              <span className="menu">Profile</span>
+            </li>
+          </Link>
           <li>
             <DataUsageIcon className="icons" />
-            <span>Stats</span>
+            <span className="menu">Stats</span>
           </li>
           <li>
             <NotificationsNoneIcon className="icons" />
-            <span>Notifications</span>
+            <span className="menu">Notifications</span>
           </li>
           <p className="title">SERVICES</p>
           <li>
             <MenuBookIcon className="icons" />
-            <span>Courses</span>
+            <span className="menu">Courses</span>
           </li>
           <li>
             <QuizIcon className="icons" />
-            <span>Practice</span>
+            <span className="menu">Practice</span>
           </li>
           <li>
             <SettingsIcon className="icons" />
-            <span>Settings</span>
+            <span className="menu">Settings</span>
           </li>
         </ul>
       </div>
       <div className="bottom">
-        <div className="themeColor"></div>
-        <div className="themeColor"></div>
+        <div
+          className="themeColor"
+          onClick={() => {
+            setTheme("App");
+          }}
+        ></div>
+        <div
+          className="themeColor"
+          onClick={() => {
+            setTheme("App dark");
+          }}
+        ></div>
       </div>
     </div>
   );

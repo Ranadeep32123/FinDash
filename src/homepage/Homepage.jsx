@@ -21,7 +21,7 @@ const Homepage = () => {
         </div>
         <div className="charts">
           <Straddlechart />
-          <Plcharts />
+          <Plcharts aspect={1.6 / 1} />
         </div>
         <div className="table">
           <List />
